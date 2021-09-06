@@ -1,0 +1,18 @@
+version: "3"
+
+services: 
+  amazon-feedback-client:
+    image: amazon-feedback-client
+    ports: 
+      - 3000:3000
+    volumes:
+      - /app
+    networks: 
+      - net-app
+
+networks: 
+  net-app:
+    driver: bridge
+
+
+
